@@ -92,6 +92,7 @@
                     <username>${github.username}</username>
                     <password>${github.password}</password>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <updateDependencies>true</updateDependencies>
                     <allowSnapshots>true</allowSnapshots>
                     <flowInitContext>
                         <masterBranchName>master</masterBranchName>
@@ -114,11 +115,11 @@
 
     <distributionManagement>
         <repository>
-            <id>sonatype-staging</id>
+            <id>ossrh</id>
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
         <snapshotRepository>
-            <id>sonatype-snapshots</id>
+            <id>ossrh</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
